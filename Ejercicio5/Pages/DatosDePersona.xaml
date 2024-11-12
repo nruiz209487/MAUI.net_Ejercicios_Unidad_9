@@ -2,11 +2,35 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejercicio5.Pages.DatosDePersona"
-             Title="DatosDePersona">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
-</ContentPage>
+             Title="DatosDePersona"
+>
+    <StackLayout Padding="10">
+            <Label Text="Detalles:" 
+               FontSize="Large"
+               HorizontalOptions="Center" />
+
+            <Image Source="{Binding Foto}" 
+               HeightRequest="150"
+               HorizontalOptions="Center" />
+
+            <Label Text="{Binding Nombre}" 
+               FontSize="Medium"
+               HorizontalOptions="Center" />
+
+            <Label Text="{Binding Apellidos}" 
+               FontSize="Medium"
+               HorizontalOptions="Center" />
+
+            <Label Text="{Binding FechaDeNacimiento}" 
+               FontSize="Medium"
+               HorizontalOptions="Center" />
+
+            <Label Text="{Binding Dirección}" 
+               FontSize="Medium"
+               HorizontalOptions="Center" />
+
+            <Label Text="{Binding Teléfono}" 
+               FontSize="Medium"
+               HorizontalOptions="Center" />
+        </StackLayout>
+    </ContentPage>

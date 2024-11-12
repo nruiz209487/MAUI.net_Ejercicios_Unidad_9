@@ -38,7 +38,7 @@ namespace Ejercicio5.Models.ENT
             if (fechaDeNacimiento != null && fechaDeNacimiento != "") { this.fechaDeNacimiento = fechaDeNacimiento; }
             if (foto != null && foto != "") { this.foto = foto; }
             if (dirección != null && dirección != "") { this.dirección = dirección; }
-            if (teléfono > 111111111 && teléfono > 999999999) { this.teléfono = teléfono; }
+            if (teléfono >= 111111111 && teléfono <= 999999999) { this.teléfono = teléfono; }
 
         }
     }
